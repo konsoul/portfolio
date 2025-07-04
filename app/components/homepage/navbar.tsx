@@ -1,66 +1,61 @@
-"use client";
-import { UserButton } from "@clerk/react-router";
-import { Github, Menu, X } from "lucide-react";
-import React, { useCallback } from "react";
-import { Link } from "react-router";
-import { Button } from "~/components/ui/button";
-import { cn } from "~/lib/utils";
+'use client'
+import { UserButton } from '@clerk/react-router'
+import { Github, Menu, X } from 'lucide-react'
+import React, { useCallback } from 'react'
+import { Link } from 'react-router'
+import { Button } from '~/components/ui/button'
+import { cn } from '~/lib/utils'
 
 const menuItems = [
-  { name: "Home", href: "#hero" },
-  { name: "Features", href: "#features" },
-  { name: "Team", href: "#team" },
-  { name: "Pricing", href: "#pricing" },
-];
+  { name: 'Home', href: '#hero' },
+  { name: 'Features', href: '#features' },
+  { name: 'Team', href: '#team' },
+]
 
 export const Navbar = ({
   loaderData,
 }: {
-  loaderData?: { isSignedIn: boolean; hasActiveSubscription: boolean };
+  loaderData?: { isSignedIn: boolean }
 }) => {
-  const [menuState, setMenuState] = React.useState(false);
-  const [isScrolled, setIsScrolled] = React.useState(false);
+  const [menuState, setMenuState] = React.useState(false)
+  const [isScrolled, setIsScrolled] = React.useState(false)
 
   React.useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+      setIsScrolled(window.scrollY > 50)
+    }
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   const handleNavClick = useCallback((href: string) => {
-    if (href.startsWith("#")) {
-      const element = document.querySelector(href);
+    if (href.startsWith('#')) {
+      const element = document.querySelector(href)
       if (element) {
         element.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-        });
+          behavior: 'smooth',
+          block: 'start',
+        })
       }
     }
-    setMenuState(false); // Close mobile menu
-  }, []);
+    setMenuState(false) // Close mobile menu
+  }, [])
 
   // Simple computations don't need useMemo
-  const dashboardLink = !loaderData?.isSignedIn 
-    ? "/sign-up" 
-    : loaderData.hasActiveSubscription ? "/dashboard" : "/pricing";
+  const dashboardLink = loaderData?.isSignedIn ? '/dashboard' : '/sign-up'
+  const dashboardText = loaderData?.isSignedIn ? 'Dashboard' : 'Get Started'
 
-  const dashboardText = !loaderData?.isSignedIn 
-    ? "Get Started (Demo)"
-    : loaderData.hasActiveSubscription ? "Dashboard" : "Subscribe";
   return (
     <header>
       <nav
-        data-state={menuState && "active"}
+        data-state={menuState && 'active'}
         className="fixed z-99 w-full px-2"
       >
         <div
           className={cn(
-            "mx-auto mt-2 max-w-6xl px-6 transition-all duration-300 lg:px-12",
+            'mx-auto mt-2 max-w-6xl px-6 transition-all duration-300 lg:px-12',
             isScrolled &&
-              "bg-background/50 max-w-4xl rounded-2xl border backdrop-blur-lg lg:px-5"
+              'bg-background/50 max-w-4xl rounded-2xl border backdrop-blur-lg lg:px-5'
           )}
         >
           <div className="relative flex flex-wrap items-center justify-between gap-6 py-3 lg:gap-0 lg:py-4">
@@ -71,12 +66,16 @@ export const Navbar = ({
                 className="flex items-center space-x-2 font-semibold text-xl"
                 prefetch="viewport"
               >
-                <img src="/rsk.png" alt="RSK Logo" className="h-12 w-12" />
+                <img
+                  src="/rsk.png"
+                  alt="Portfolio Logo"
+                  className="h-12 w-12"
+                />
               </Link>
 
               <button
                 onClick={() => setMenuState(!menuState)}
-                aria-label={menuState == true ? "Close Menu" : "Open Menu"}
+                aria-label={menuState == true ? 'Close Menu' : 'Open Menu'}
                 className="relative z-20 -m-2.5 -mr-4 block cursor-pointer p-2.5 lg:hidden"
               >
                 <Menu className="in-data-[state=active]:rotate-180 in-data-[state=active]:scale-0 in-data-[state=active]:opacity-0 m-auto size-6 duration-200" />
@@ -116,7 +115,7 @@ export const Navbar = ({
               </div>
               <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
                 <Link
-                  to="https://github.com/michaelshimeles/react-starter-kit"
+                  to="https://github.com/your-username"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center"
@@ -138,7 +137,7 @@ export const Navbar = ({
                       asChild
                       variant="outline"
                       size="sm"
-                      className={cn(isScrolled && "lg:hidden")}
+                      className={cn(isScrolled && 'lg:hidden')}
                     >
                       <Link to="/sign-in" prefetch="viewport">
                         <span>Login</span>
@@ -147,7 +146,7 @@ export const Navbar = ({
                     <Button
                       asChild
                       size="sm"
-                      className={cn(isScrolled && "lg:hidden")}
+                      className={cn(isScrolled && 'lg:hidden')}
                     >
                       <Link to="/sign-up" prefetch="viewport">
                         <span>Sign Up</span>
@@ -156,7 +155,7 @@ export const Navbar = ({
                     <Button
                       asChild
                       size="sm"
-                      className={cn(isScrolled ? "lg:inline-flex" : "hidden")}
+                      className={cn(isScrolled ? 'lg:inline-flex' : 'hidden')}
                     >
                       <Link to="/sign-up" prefetch="viewport">
                         <span>{dashboardText}</span>
@@ -170,5 +169,5 @@ export const Navbar = ({
         </div>
       </nav>
     </header>
-  );
-};
+  )
+}
