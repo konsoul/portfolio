@@ -1,8 +1,4 @@
-import {
-  IconDashboard,
-  IconSettings,
-  IconMessageCircle,
-} from '@tabler/icons-react'
+import { IconDashboard, IconSettings, IconMessageCircle } from '@tabler/icons-react'
 import { Link } from 'react-router'
 import { NavMain } from './nav-main'
 import { NavSecondary } from './nav-secondary'
@@ -46,21 +42,19 @@ export function AppSidebar({
   user: any
 }) {
   return (
-    <Sidebar collapsible="offcanvas" variant={variant}>
+    <Sidebar collapsible='offcanvas' variant={variant}>
       <SidebarHeader>
         <SidebarMenu>
           <SidebarMenuItem>
-            <Link to="/" prefetch="viewport">
-              <span className="text-base font-semibold">
-                Developer Portfolio
-              </span>
+            <Link to='/' prefetch='viewport'>
+              <span className='text-base font-semibold'>Developer Portfolio</span>
             </Link>
           </SidebarMenuItem>
         </SidebarMenu>
       </SidebarHeader>
       <SidebarContent>
         <NavMain items={data.navMain} />
-        <NavSecondary items={data.navSecondary} className="mt-auto" />
+        <NavSecondary items={data.navSecondary} className='mt-auto' />
       </SidebarContent>
       <SidebarFooter>{user && <NavUser user={user} />}</SidebarFooter>
     </Sidebar>

@@ -1,0 +1,57 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+
+# Build outputs
+build/
+dist/
+.next/
+out/
+
+# Generated files
+.react-router/
+convex/_generated/
+*.min.js
+*.min.css
+
+# Package manager files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Environment and config files
+.env*
+!.env.example
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Coverage reports
+coverage/
+.nyc_output/
+
+# Documentation build
+docs/build/
+
+# Temporary files
+tmp/
+temp/
+
+# Lock files (optional - uncomment if you want to format them)
+# *.lock
+
+# Config files that shouldn't be formatted
+.gitignore
+.prettierignore
+LICENSE

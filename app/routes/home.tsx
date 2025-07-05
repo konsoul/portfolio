@@ -7,8 +7,7 @@ import type { Route } from './+types/home'
 
 export function meta({}: Route.MetaArgs) {
   const title = 'Developer Portfolio'
-  const description =
-    'Personal developer portfolio showcasing projects, skills, and experience.'
+  const description = 'Personal developer portfolio showcasing projects, skills, and experience.'
   const keywords = 'Developer, Portfolio, React, TypeScript, Full Stack'
   const siteUrl = 'https://your-portfolio.com/'
   const imageUrl =

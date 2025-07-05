@@ -2,17 +2,15 @@ import js from '@eslint/js'
 import globals from 'globals'
 import tseslint from 'typescript-eslint'
 import pluginReact from 'eslint-plugin-react'
-import pluginReactHooks from 'eslint-plugin-react-hooks'
-import pluginsJsxA11y from 'eslint-plugin-jsx-a11y'
 
 export default [
   js.configs.recommended,
   ...tseslint.configs.recommended,
-  pluginReact.configs.flat.recommended,
-  pluginReactHooks.configs.recommended,
-  pluginsJsxA11y.configs.recommended,
   {
     files: ['**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
+    plugins: {
+      react: pluginReact,
+    },
     languageOptions: {
       globals: {
         ...globals.browser,
@@ -32,14 +30,16 @@ export default [
       },
     },
     rules: {
-      // Add any custom rules here
-      'react/prop-types': 'off',
+      // React rules
+      'react/react-in-jsx-scope': 'off',
       'react/display-name': 'off',
-      'react/react-in-jsx-scope': 'off', // Not needed in React 17+
-      '@typescript-eslint/no-unused-vars': [
-        'warn',
-        { argsIgnorePattern: '^_' },
-      ],
+      
+      // TypeScript rules
+      '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
+      '@typescript-eslint/no-explicit-any': 'warn',
+      
+      // General rules
+      'no-empty-pattern': 'off',
     },
   },
 ]
