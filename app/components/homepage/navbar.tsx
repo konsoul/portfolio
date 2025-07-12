@@ -5,6 +5,7 @@ import React, { useCallback } from 'react'
 import { Link } from 'react-router'
 import { Button } from '~/components/ui/button'
 import { cn } from '~/lib/utils'
+import { ThemeToggle } from '../ui/theme-toggle'
 
 const menuItems = [
   { name: 'Home', href: '#hero' },
@@ -103,13 +104,14 @@ export const Navbar = ({ loaderData }: { loaderData?: { isSignedIn: boolean } })
               </div>
               <div className='flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit'>
                 <Link
-                  to='https://github.com/your-username'
+                  to='https://github.com/konsoul'
                   target='_blank'
                   rel='noopener noreferrer'
                   className='flex items-center justify-center'
                 >
                   <Github className='w-5 h-5' />
                 </Link>
+                <ThemeToggle />
                 {loaderData?.isSignedIn ? (
                   <div className='flex items-center gap-3'>
                     <Button asChild size='sm'>

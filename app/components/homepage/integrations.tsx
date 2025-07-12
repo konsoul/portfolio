@@ -64,11 +64,7 @@ export default function IntegrationsSection({
                   </Link>
                 </Button>
                 <Button variant='outline' size='sm' asChild>
-                  <Link
-                    to='https://github.com/your-username'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                  >
+                  <Link to='https://github.com/konsoul' target='_blank' rel='noopener noreferrer'>
                     ⭐️ View on GitHub
                   </Link>
                 </Button>
