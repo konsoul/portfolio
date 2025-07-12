@@ -1,0 +1,35 @@
+/* Coolors Exported Palette - https://coolors.co/424b54-b38d97-d5aca9-ebcfb2-c5baaf */
+
+- Tailwind
+
+{ 'charcoal': { DEFAULT: '#424b54', 100: '#0d0f11', 200: '#1a1e21', 300: '#272c32', 400: '#343b42', 500: '#424b54', 600: '#616e7b', 700: '#85929f', 800: '#aeb7bf', 900: '#d6dbdf' }, 'rosy_brown': { DEFAULT: '#b38d97', 100: '#271a1d', 200: '#4d333a', 300: '#744d57', 400: '#9a6775', 500: '#b38d97', 600: '#c3a4ac', 700: '#d2bbc1', 800: '#e1d2d6', 900: '#f0e8ea' }, 'tea_rose_(red)': { DEFAULT: '#d5aca9', 100: '#331b19', 200: '#673632', 300: '#9a514c', 400: '#bc7b76', 500: '#d5aca9', 600: '#ddbdbb', 700: '#e6cdcc', 800: '#eededd', 900: '#f7eeee' }, 'desert_sand': { DEFAULT: '#ebcfb2', 100: '#422a11', 200: '#835422', 300: '#c57e33', 400: '#daa770', 500: '#ebcfb2', 600: '#efd9c1', 700: '#f3e3d1', 800: '#f7ece0', 900: '#fbf6f0' }, 'silver': { DEFAULT: '#c5baaf', 100: '#2b251f', 200: '#564a3f', 300: '#82705e', 400: '#a69584', 500: '#c5baaf', 600: '#d1c8bf', 700: '#dcd6cf', 800: '#e8e3df', 900: '#f3f1ef' } }
+
+- CSV
+
+424b54,b38d97,d5aca9,ebcfb2,c5baaf
+
+- With #
+
+#424b54, #b38d97, #d5aca9, #ebcfb2, #c5baaf
+
+- Array
+
+["424b54","b38d97","d5aca9","ebcfb2","c5baaf"]
+
+- Object
+
+{"Charcoal":"424b54","Rosy brown":"b38d97","Tea rose (red)":"d5aca9","Desert sand":"ebcfb2","Silver":"c5baaf"}
+
+- Extended Array
+
+[{"name":"Charcoal","hex":"424b54","rgb":[66,75,84],"cmyk":[21,11,0,67],"hsb":[210,21,33],"hsl":[210,12,29],"lab":[31,-1,-7]},{"name":"Rosy brown","hex":"b38d97","rgb":[179,141,151],"cmyk":[0,21,16,30],"hsb":[344,21,70],"hsl":[344,20,63],"lab":[62,16,0]},{"name":"Tea rose (red)","hex":"d5aca9","rgb":[213,172,169],"cmyk":[0,19,21,16],"hsb":[4,21,84],"hsl":[4,34,75],"lab":[74,14,7]},{"name":"Desert sand","hex":"ebcfb2","rgb":[235,207,178],"cmyk":[0,12,24,8],"hsb":[31,24,92],"hsl":[31,59,81],"lab":[85,5,18]},{"name":"Silver","hex":"c5baaf","rgb":[197,186,175],"cmyk":[0,6,11,23],"hsb":[30,11,77],"hsl":[30,16,73],"lab":[76,2,7]}]
+
+- XML
+
+<palette>
+  <color name="Charcoal" hex="424b54" r="66" g="75" b="84" />
+  <color name="Rosy brown" hex="b38d97" r="179" g="141" b="151" />
+  <color name="Tea rose (red)" hex="d5aca9" r="213" g="172" b="169" />
+  <color name="Desert sand" hex="ebcfb2" r="235" g="207" b="178" />
+  <color name="Silver" hex="c5baaf" r="197" g="186" b="175" />
+</palette>

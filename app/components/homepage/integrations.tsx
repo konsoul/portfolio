@@ -15,45 +15,18 @@ export default function IntegrationsSection({
 }) {
   return (
     <section id='hero'>
-      <div className='bg-gradient-to-br from-lavender-blush-700 to-lavender-blush-900 dark:from-dark-purple-200 dark:to-dark-purple-400 py-24 md:py-32'>
+      <div className='bg-gradient-to-br from-tea-rose-700 to-desert-sand-800 dark:from-charcoal-200 dark:to-charcoal-400 py-24 md:py-32'>
         <div className='mx-auto max-w-5xl px-6 mt-[2rem]'>
           <div className='grid items-center sm:grid-cols-2'>
-            <div className='bg-lavender-blush-600/20 dark:bg-dark-purple-700/40 relative mx-auto w-fit rounded-2xl p-8 backdrop-blur-sm border border-lavender-blush-300/30 dark:border-dark-purple-500/30'>
-              <div className='bg-radial to-lavender-blush-800/80 dark:to-dark-purple-600/60 absolute inset-0 z-10 from-transparent to-75% rounded-2xl'></div>
-              <div className='mx-auto mb-2 flex w-fit justify-center gap-2'>
-                <IntegrationCard>
-                  <ReactRouter />
-                </IntegrationCard>
-                <IntegrationCard>
-                  <Convex />
-                </IntegrationCard>
-              </div>
-              <div className='mx-auto my-2 flex w-fit justify-center gap-2'>
-                <IntegrationCard>
-                  <ReactIcon />
-                </IntegrationCard>
-                <IntegrationCard
-                  borderClassName='shadow-orchid-500/20 shadow-xl border-orchid-400/50 dark:border-orchid-300/50'
-                  className='bg-orchid-50 dark:bg-orchid-900/20'
-                >
-                  <LogoIcon />
-                </IntegrationCard>
-                <IntegrationCard>
-                  <TailwindIcon />
-                </IntegrationCard>
-              </div>
-
-              <div className='mx-auto flex w-fit justify-center gap-2'>
-                <IntegrationCard>
-                  <Typescript />
-                </IntegrationCard>
-              </div>
+            <div className='relative mx-auto w-fit rounded-2xl p-8'>
+              <div className='bg-radial absolute z-10'></div>
+              <img src='../public/IMG_0098.png' className='rounded-lg' alt='Bradley Rappa' />
             </div>
             <div className='mx-auto mt-6 max-w-lg space-y-6 text-center sm:mt-0 sm:text-left'>
-              <h2 className='text-balance text-3xl font-semibold md:text-4xl text-dark-purple-800 dark:text-white'>
+              <h2 className='text-balance text-3xl font-semibold md:text-4xl text-charcoal-600 dark:text-charcoal-900'>
                 Bradley Rappa Developer
               </h2>
-              <p className='text-dark-purple-600 dark:text-gray-300'>
+              <p className='text-charcoal-500 dark:text-charcoal-800'>
                 Career transitioner and builder of efficient systems from forest to source code.
                 Former timber cutter turned full-stack MERN developer with a decade of hands-on IT
                 operations experience.
@@ -93,14 +66,14 @@ const IntegrationCard = memo(
     return (
       <div
         className={cn(
-          'bg-lavender-blush-100 dark:bg-dark-purple-800/70 relative flex size-20 rounded-xl shadow-lg backdrop-blur-sm',
+          'bg-desert-sand-100 dark:bg-charcoal-400/70 relative flex size-20 rounded-xl shadow-lg backdrop-blur-sm',
           className,
         )}
       >
         <div
           role='presentation'
           className={cn(
-            'absolute inset-0 rounded-xl border border-lavender-blush-300 dark:border-dark-purple-500/50',
+            'absolute inset-0 rounded-xl border border-silver-300 dark:border-charcoal-600/50',
             borderClassName,
           )}
         />
