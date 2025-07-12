@@ -4,7 +4,9 @@ import { LogoIcon } from '~/components/logo'
 import { Convex, ReactIcon, ReactRouter, TailwindIcon, Typescript } from '~/components/logos'
 import { Button } from '~/components/ui/button'
 import { cn } from '~/lib/utils'
-import { Navbar } from './navbar'
+// import { Navbar } from './navbar'
+import { Github } from 'lucide-react'
+import { ThemeToggle } from '../ui/theme-toggle'
 
 export default function IntegrationsSection({
   loaderData,
@@ -13,12 +15,11 @@ export default function IntegrationsSection({
 }) {
   return (
     <section id='hero'>
-      <Navbar loaderData={loaderData} />
-      <div className='bg-muted dark:bg-background py-24 md:py-32'>
+      <div className='bg-gradient-to-br from-lavender-blush-700 to-lavender-blush-900 dark:from-dark-purple-200 dark:to-dark-purple-400 py-24 md:py-32'>
         <div className='mx-auto max-w-5xl px-6 mt-[2rem]'>
           <div className='grid items-center sm:grid-cols-2'>
-            <div className='dark:bg-muted/50 relative mx-auto w-fit'>
-              <div className='bg-radial to-muted dark:to-background absolute inset-0 z-10 from-transparent to-75%'></div>
+            <div className='bg-lavender-blush-600/20 dark:bg-dark-purple-700/40 relative mx-auto w-fit rounded-2xl p-8 backdrop-blur-sm border border-lavender-blush-300/30 dark:border-dark-purple-500/30'>
+              <div className='bg-radial to-lavender-blush-800/80 dark:to-dark-purple-600/60 absolute inset-0 z-10 from-transparent to-75% rounded-2xl'></div>
               <div className='mx-auto mb-2 flex w-fit justify-center gap-2'>
                 <IntegrationCard>
                   <ReactRouter />
@@ -32,8 +33,8 @@ export default function IntegrationsSection({
                   <ReactIcon />
                 </IntegrationCard>
                 <IntegrationCard
-                  borderClassName='shadow-black-950/10 shadow-xl border-black/25 dark:border-white/25'
-                  className='dark:bg-white/10'
+                  borderClassName='shadow-orchid-500/20 shadow-xl border-orchid-400/50 dark:border-orchid-300/50'
+                  className='bg-orchid-50 dark:bg-orchid-900/20'
                 >
                   <LogoIcon />
                 </IntegrationCard>
@@ -49,12 +50,13 @@ export default function IntegrationsSection({
               </div>
             </div>
             <div className='mx-auto mt-6 max-w-lg space-y-6 text-center sm:mt-0 sm:text-left'>
-              <h2 className='text-balance text-3xl font-semibold md:text-4xl'>
-                Developer Portfolio
+              <h2 className='text-balance text-3xl font-semibold md:text-4xl text-dark-purple-800 dark:text-white'>
+                Bradley Rappa Developer
               </h2>
-              <p className='text-muted-foreground'>
-                Welcome to my developer portfolio showcasing my projects, skills, and experience in
-                modern web development.
+              <p className='text-dark-purple-600 dark:text-gray-300'>
+                Career transitioner and builder of efficient systems from forest to source code.
+                Former timber cutter turned full-stack MERN developer with a decade of hands-on IT
+                operations experience.
               </p>
 
               <div className='flex gap-3'>
@@ -65,9 +67,10 @@ export default function IntegrationsSection({
                 </Button>
                 <Button variant='outline' size='sm' asChild>
                   <Link to='https://github.com/konsoul' target='_blank' rel='noopener noreferrer'>
-                    ⭐️ View on GitHub
+                    <Github /> View on GitHub
                   </Link>
                 </Button>
+                <ThemeToggle />
               </div>
             </div>
           </div>
@@ -90,14 +93,14 @@ const IntegrationCard = memo(
     return (
       <div
         className={cn(
-          'bg-background relative flex size-20 rounded-xl dark:bg-transparent',
+          'bg-lavender-blush-100 dark:bg-dark-purple-800/70 relative flex size-20 rounded-xl shadow-lg backdrop-blur-sm',
           className,
         )}
       >
         <div
           role='presentation'
           className={cn(
-            'absolute inset-0 rounded-xl border border-black/20 dark:border-white/25',
+            'absolute inset-0 rounded-xl border border-lavender-blush-300 dark:border-dark-purple-500/50',
             borderClassName,
           )}
         />
