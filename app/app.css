@@ -37,6 +37,57 @@
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
+  /* Custom Color Palette */
+  --color-charcoal-100: #0d0f11;
+  --color-charcoal-200: #1a1e21;
+  --color-charcoal-300: #272c32;
+  --color-charcoal-400: #343b42;
+  --color-charcoal-500: #424b54;
+  --color-charcoal-600: #616e7b;
+  --color-charcoal-700: #85929f;
+  --color-charcoal-800: #aeb7bf;
+  --color-charcoal-900: #d6dbdf;
+  --color-charcoal: #424b54;
+  --color-rosy-brown-100: #271a1d;
+  --color-rosy-brown-200: #4d333a;
+  --color-rosy-brown-300: #744d57;
+  --color-rosy-brown-400: #9a6775;
+  --color-rosy-brown-500: #b38d97;
+  --color-rosy-brown-600: #c3a4ac;
+  --color-rosy-brown-700: #d2bbc1;
+  --color-rosy-brown-800: #e1d2d6;
+  --color-rosy-brown-900: #f0e8ea;
+  --color-rosy-brown: #b38d97;
+  --color-tea-rose-100: #331b19;
+  --color-tea-rose-200: #673632;
+  --color-tea-rose-300: #9a514c;
+  --color-tea-rose-400: #bc7b76;
+  --color-tea-rose-500: #d5aca9;
+  --color-tea-rose-600: #ddbdbb;
+  --color-tea-rose-700: #e6cdcc;
+  --color-tea-rose-800: #eededd;
+  --color-tea-rose-900: #f7eeee;
+  --color-tea-rose: #d5aca9;
+  --color-desert-sand-100: #422a11;
+  --color-desert-sand-200: #835422;
+  --color-desert-sand-300: #c57e33;
+  --color-desert-sand-400: #daa770;
+  --color-desert-sand-500: #ebcfb2;
+  --color-desert-sand-600: #efd9c1;
+  --color-desert-sand-700: #f3e3d1;
+  --color-desert-sand-800: #f7ece0;
+  --color-desert-sand-900: #fbf6f0;
+  --color-desert-sand: #ebcfb2;
+  --color-silver-100: #2b251f;
+  --color-silver-200: #564a3f;
+  --color-silver-300: #82705e;
+  --color-silver-400: #a69584;
+  --color-silver-500: #c5baaf;
+  --color-silver-600: #d1c8bf;
+  --color-silver-700: #dcd6cf;
+  --color-silver-800: #e8e3df;
+  --color-silver-900: #f3f1ef;
+  --color-silver: #c5baaf;
   --radius-sm: 8px;
   --radius-md: 10px;
   --radius-lg: 12px;
@@ -44,39 +95,39 @@
 }
 
 :root {
-  /* Apple Light Theme Colors */
-  --background: #ffffff;
-  --foreground: #000000;
-  --card: #ffffff;
-  --card-foreground: #000000;
-  --popover: #ffffff;
-  --popover-foreground: #000000;
-  --primary: #0071e3; /* Apple Blue */
-  --primary-foreground: #ffffff;
-  --secondary: #f5f5f7; /* Apple Light Gray */
-  --secondary-foreground: #1d1d1f;
-  --muted: #f5f5f7;
-  --muted-foreground: #86868b;
-  --accent: #0071e3; /* Apple Blue */
-  --accent-foreground: #ffffff;
-  --destructive: #ff3b30; /* Apple Red */
-  --destructive-foreground: #ffffff;
-  --border: #e2e2e7; /* Lighter, more subtle border */
-  --input: #f5f5f7;
-  --ring: #0071e3;
-  --chart-1: #0071e3; /* Apple Blue */
-  --chart-2: #34c759; /* Apple Green */
-  --chart-3: #ff9500; /* Apple Orange */
-  --chart-4: #ffcc00; /* Apple Yellow */
-  --chart-5: #af52de; /* Apple Purple */
-  --sidebar: #f5f5f7;
-  --sidebar-foreground: #1d1d1f;
-  --sidebar-primary: #0071e3;
-  --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #e8e8ed;
-  --sidebar-accent-foreground: #1d1d1f;
-  --sidebar-border: #e2e2e7; /* Lighter border */
-  --sidebar-ring: #0071e3;
+  /* Custom Light Theme Colors - Using Your Color Palette */
+  --background: #fbf6f0; /* Desert Sand 900 - Warm, soft background */
+  --foreground: #424b54; /* Charcoal - Perfect for text */
+  --card: #ffffff; /* Pure white for cards to stand out */
+  --card-foreground: #424b54; /* Charcoal for card text */
+  --popover: #ffffff; /* White for popovers */
+  --popover-foreground: #424b54; /* Charcoal for popover text */
+  --primary: #b38d97; /* Rosy Brown - Primary accent */
+  --primary-foreground: #ffffff; /* White text on primary */
+  --secondary: #f3e3d1; /* Desert Sand 700 - Soft secondary */
+  --secondary-foreground: #424b54; /* Charcoal on secondary */
+  --muted: #e8e3df; /* Silver 800 - Muted backgrounds */
+  --muted-foreground: #82705e; /* Silver 300 - Muted text */
+  --accent: #d5aca9; /* Tea Rose - Warm accent */
+  --accent-foreground: #424b54; /* Charcoal on accent */
+  --destructive: #9a514c; /* Tea Rose 300 - Warm destructive */
+  --destructive-foreground: #ffffff; /* White on destructive */
+  --border: #dcd6cf; /* Silver 700 - Subtle borders */
+  --input: #f3f1ef; /* Silver 900 - Input backgrounds */
+  --ring: #b38d97; /* Rosy Brown for focus rings */
+  --chart-1: #b38d97; /* Rosy Brown */
+  --chart-2: #d5aca9; /* Tea Rose */
+  --chart-3: #ebcfb2; /* Desert Sand */
+  --chart-4: #c5baaf; /* Silver */
+  --chart-5: #424b54; /* Charcoal */
+  --sidebar: #f7ece0; /* Desert Sand 800 - Warm sidebar */
+  --sidebar-foreground: #424b54; /* Charcoal for sidebar text */
+  --sidebar-primary: #b38d97; /* Rosy Brown for sidebar primary */
+  --sidebar-primary-foreground: #ffffff; /* White on sidebar primary */
+  --sidebar-accent: #efd9c1; /* Desert Sand 600 - Sidebar accent */
+  --sidebar-accent-foreground: #424b54; /* Charcoal on sidebar accent */
+  --sidebar-border: #dcd6cf; /* Silver 700 - Sidebar borders */
+  --sidebar-ring: #b38d97; /* Rosy Brown for sidebar focus */
   /* Apple Fonts */
   --font-apple-system:
     -apple-system, BlinkMacSystemFont, 'San Francisco', 'Helvetica Neue', Helvetica, sans-serif;
@@ -126,38 +177,80 @@
 }
 
 .dark {
-  --sidebar: hsl(240 5.9% 10%);
-  --sidebar-foreground: hsl(240 4.8% 95.9%);
-  --sidebar-primary: hsl(224.3 76.3% 48%);
-  --sidebar-primary-foreground: hsl(0 0% 100%);
-  --sidebar-accent: hsl(240 3.7% 15.9%);
-  --sidebar-accent-foreground: hsl(240 4.8% 95.9%);
-  --sidebar-border: hsl(240 3.7% 15.9%);
-  --sidebar-ring: hsl(217.2 91.2% 59.8%);
-  --background: #1d1d1d;
-  --foreground: #ffffff;
-  --card: #1c1c1e;
-  --card-foreground: #ffffff;
-  --popover: #1c1c1e;
-  --popover-foreground: #ffffff;
-  --primary: #0a84ff;
-  --primary-foreground: #ffffff;
-  --secondary: #1c1c1e;
-  --secondary-foreground: #ffffff;
-  --muted: #1c1c1e;
-  --muted-foreground: #8e8e93;
-  --accent: #0a84ff;
-  --accent-foreground: #ffffff;
-  --destructive: #ff453a;
-  --destructive-foreground: #ffffff;
-  --border: #38383a;
-  --input: #1c1c1e;
-  --ring: #0a84ff;
-  --chart-1: #0a84ff;
-  --chart-2: #30d158;
-  --chart-3: #ff9f0a;
-  --chart-4: #ffd60a;
-  --chart-5: #bf5af2;
+  /* Custom Dark Theme Colors - Using Your Color Palette */
+  --background: #0d0f11; /* Charcoal 100 - Deep, rich background */
+  --foreground: #d6dbdf; /* Charcoal 900 - Light text */
+  --card: #1a1e21; /* Charcoal 200 - Elevated card backgrounds */
+  --card-foreground: #d6dbdf; /* Charcoal 900 - Card text */
+  --popover: #1a1e21; /* Charcoal 200 - Popover backgrounds */
+  --popover-foreground: #d6dbdf; /* Charcoal 900 - Popover text */
+  --primary: #c3a4ac; /* Rosy Brown 600 - Lighter primary for dark mode */
+  --primary-foreground: #271a1d; /* Rosy Brown 100 - Dark text on primary */
+  --secondary: #272c32; /* Charcoal 300 - Secondary backgrounds */
+  --secondary-foreground: #aeb7bf; /* Charcoal 800 - Secondary text */
+  --muted: #343b42; /* Charcoal 400 - Muted backgrounds */
+  --muted-foreground: #85929f; /* Charcoal 700 - Muted text */
+  --accent: #ddbdbb; /* Tea Rose 600 - Soft accent for dark mode */
+  --accent-foreground: #331b19; /* Tea Rose 100 - Dark text on accent */
+  --destructive: #bc7b76; /* Tea Rose 400 - Warm destructive */
+  --destructive-foreground: #f7eeee; /* Tea Rose 900 - Light text on destructive */
+  --border: #424b54; /* Charcoal 500 - Borders */
+  --input: #343b42; /* Charcoal 400 - Input backgrounds */
+  --ring: #c3a4ac; /* Rosy Brown 600 - Focus rings */
+  --chart-1: #c3a4ac; /* Rosy Brown 600 */
+  --chart-2: #ddbdbb; /* Tea Rose 600 */
+  --chart-3: #efd9c1; /* Desert Sand 600 */
+  --chart-4: #d1c8bf; /* Silver 600 */
+  --chart-5: #616e7b; /* Charcoal 600 */
+  --sidebar: #1a1e21; /* Charcoal 200 - Sidebar background */
+  --sidebar-foreground: #aeb7bf; /* Charcoal 800 - Sidebar text */
+  --sidebar-primary: #c3a4ac; /* Rosy Brown 600 - Sidebar primary */
+  --sidebar-primary-foreground: #271a1d; /* Rosy Brown 100 - Sidebar primary text */
+  --sidebar-accent: #272c32; /* Charcoal 300 - Sidebar accent */
+  --sidebar-accent-foreground: #aeb7bf; /* Charcoal 800 - Sidebar accent text */
+  --sidebar-border: #424b54; /* Charcoal 500 - Sidebar borders */
+  --sidebar-ring: #c3a4ac; /* Rosy Brown 600 - Sidebar focus */
+  /* Improved custom colors for dark mode */
+  --color-dark-charcoal-100: #0d0f11;
+  --color-dark-charcoal-200: #1a1e21;
+  --color-dark-charcoal-300: #272c32;
+  --color-dark-charcoal-400: #343b42;
+  --color-dark-charcoal-500: #424b54;
+  --color-dark-charcoal-600: #616e7b;
+  --color-dark-charcoal-700: #85929f;
+  --color-dark-charcoal-800: #aeb7bf;
+  --color-dark-charcoal-900: #d6dbdf;
+  --color-dark-charcoal: #424b54;
+  --color-dark-rosy-brown-100: #271a1d;
+  --color-dark-rosy-brown-200: #4d333a;
+  --color-dark-rosy-brown-300: #744d57;
+  --color-dark-rosy-brown-400: #9a6775;
+  --color-dark-rosy-brown-500: #b38d97;
+  --color-dark-rosy-brown-600: #c3a4ac;
+  --color-dark-rosy-brown-700: #d2bbc1;
+  --color-dark-rosy-brown-800: #e1d2d6;
+  --color-dark-rosy-brown-900: #f0e8ea;
+  --color-dark-rosy-brown: #b38d97;
+  --color-dark-tea-rose-100: #331b19;
+  --color-dark-tea-rose-200: #673632;
+  --color-dark-tea-rose-300: #9a514c;
+  --color-dark-tea-rose-400: #bc7b76;
+  --color-dark-tea-rose-500: #d5aca9;
+  --color-dark-tea-rose-600: #ddbdbb;
+  --color-dark-tea-rose-700: #e6cdcc;
+  --color-dark-tea-rose-800: #eededd;
+  --color-dark-tea-rose-900: #f7eeee;
+  --color-dark-tea-rose: #d5aca9;
+  --color-dark-desert-sand-100: #422a11;
+  --color-dark-desert-sand-200: #835422;
+  --color-dark-desert-sand-300: #c57e33;
+  --color-dark-desert-sand-400: #daa770;
+  --color-dark-desert-sand-500: #ebcfb2;
+  --color-dark-desert-sand-600: #efd9c1;
+  --color-dark-desert-sand-700: #f3e3d1;
+  --color-dark-desert-sand-800: #f7ece0;
+  --color-dark-desert-sand-900: #fbf6f0;
+  --color-dark-desert-sand: #ebcfb2;
 }
 
 @layer base {
