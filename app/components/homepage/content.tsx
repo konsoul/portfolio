@@ -1,4 +1,14 @@
-import { MapPin, Mail, Github, Linkedin, Code, Database, Server } from 'lucide-react'
+import {
+  MapPin,
+  Mail,
+  Github,
+  Linkedin,
+  Code,
+  Database,
+  Server,
+  SquareKanban,
+  PencilRuler,
+} from 'lucide-react'
 
 export default function ContentSection() {
   return (
@@ -45,7 +55,7 @@ export default function ContentSection() {
         {/* Resume Section */}
         <div className='mt-24 space-y-12'>
           {/* Key Achievements */}
-          <div className='bg-gradient-to-r from-slate-50 to-gray-50 dark:from-slate-800 dark:to-gray-800 p-8 rounded-2xl border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-md dark:shadow-gray-900/20 transition-shadow'>
+          <div className='bg-gradient-to-r from-white to-silver-900 dark:from-slate-800/30 dark:to-gray-800/60 p-8 rounded-2xl border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-md dark:shadow-gray-900/20 transition-shadow'>
             <div className='flex items-center gap-3 mb-6'>
               <div className='w-2 h-8 bg-green-600 dark:bg-green-500 rounded-full'></div>
               <h3 className='text-2xl font-semibold text-gray-900 dark:text-gray-100'>
@@ -105,7 +115,7 @@ export default function ContentSection() {
           </div>
 
           {/* Technical Skills */}
-          <div className='bg-gradient-to-r from-slate-50 to-gray-50 dark:from-slate-800 dark:to-gray-800 p-8 rounded-2xl border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-md dark:shadow-gray-900/20 transition-shadow'>
+          <div className='bg-gradient-to-r from-white to-silver-900 dark:from-charcoal-100/50 dark:to-charcoal-200/30 p-8 rounded-2xl border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-md dark:shadow-gray-900/20 transition-shadow'>
             <div className='flex items-center gap-3 mb-6'>
               <div className='w-2 h-8 bg-purple-600 dark:bg-purple-500 rounded-full'></div>
               <h3 className='text-2xl font-semibold text-gray-900 dark:text-gray-100'>
@@ -131,7 +141,7 @@ export default function ContentSection() {
               </div>
               <div>
                 <div className='flex items-center gap-2 mb-2'>
-                  <Code className='w-4 h-4 text-purple-600 dark:text-purple-400' />
+                  <SquareKanban className='w-4 h-4 text-purple-600 dark:text-purple-400' />
                   <h4 className='font-medium text-gray-900 dark:text-gray-100'>Tools/Platforms</h4>
                 </div>
                 <div className='flex flex-wrap gap-1'>
@@ -147,7 +157,7 @@ export default function ContentSection() {
               </div>
               <div>
                 <div className='flex items-center gap-2 mb-2'>
-                  <Code className='w-4 h-4 text-purple-600 dark:text-purple-400' />
+                  <PencilRuler className='w-4 h-4 text-purple-600 dark:text-purple-400' />
                   <h4 className='font-medium text-gray-900 dark:text-gray-100'>Methods</h4>
                 </div>
                 <div className='flex flex-wrap gap-1'>
@@ -197,7 +207,7 @@ export default function ContentSection() {
           </div>
 
           {/* Experience */}
-          <div className='bg-gradient-to-r from-slate-50 to-gray-50 dark:from-slate-800 dark:to-gray-800 p-8 rounded-2xl border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-md dark:shadow-gray-900/20 transition-shadow'>
+          <div className='bg-gradient-to-r from-white to-silver-900 dark:from-charcoal-400/30 dark:to-slate-600/35 p-8 rounded-2xl border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-md dark:shadow-gray-900/20 transition-shadow'>
             <div className='flex items-center gap-3 mb-6'>
               <div className='w-2 h-8 bg-orange-600 dark:bg-orange-500 rounded-full'></div>
               <h3 className='text-2xl font-semibold text-gray-900 dark:text-gray-100'>
@@ -288,7 +298,7 @@ export default function ContentSection() {
 
           {/* Education & Contact */}
           <div className='grid gap-6 md:grid-cols-2'>
-            <div className='bg-gradient-to-r from-slate-50 to-gray-50 dark:from-slate-800 dark:to-gray-800 p-8 rounded-2xl border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-md dark:shadow-gray-900/20 transition-shadow'>
+            <div className='bg-gradient-to-r from-white to-silver-900 dark:from-slate-800/40 dark:to-gray-800/30 p-8 rounded-2xl border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-md dark:shadow-gray-900/20 transition-shadow'>
               <div className='flex items-center gap-3 mb-6'>
                 <div className='w-2 h-8 bg-blue-600 dark:bg-blue-500 rounded-full'></div>
                 <h3 className='text-2xl font-semibold text-gray-900 dark:text-gray-100'>
@@ -308,7 +318,7 @@ export default function ContentSection() {
               </div>
             </div>
 
-            <div className='bg-gradient-to-r from-slate-50 to-gray-50 dark:from-slate-800 dark:to-gray-800 p-8 rounded-2xl border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-md dark:shadow-gray-900/20 transition-shadow'>
+            <div className='bg-gradient-to-r from-white to-silver-900 dark:from-charcoal-100/50 dark:to-charcoal-200/30 p-8 rounded-2xl border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-md dark:shadow-gray-900/20 transition-shadow'>
               <div className='flex items-center gap-3 mb-6'>
                 <div className='w-2 h-8 bg-green-600 dark:bg-green-500 rounded-full'></div>
                 <h3 className='text-2xl font-semibold text-gray-900 dark:text-gray-100'>Contact</h3>
@@ -316,21 +326,41 @@ export default function ContentSection() {
               <div className='space-y-3'>
                 <div className='flex items-center gap-3'>
                   <Mail className='w-4 h-4 text-gray-600 dark:text-gray-400' />
-                  <span className='text-sm text-gray-700 dark:text-gray-300'>
+                  <a
+                    href='mailto:bradley.rappa@icloud.com'
+                    className='text-sm text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-orange-600 transition-colors'
+                  >
                     bradley.rappa@icloud.com
-                  </span>
+                  </a>
                 </div>
                 <div className='flex items-center gap-3'>
                   <MapPin className='w-4 h-4 text-gray-600 dark:text-gray-400' />
-                  <span className='text-sm text-gray-700 dark:text-gray-300'>Canyonville, OR</span>
+                  <a
+                    href='https://www.google.com/maps/@42.9263218,-123.2807039,13669m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI1MDcwOS4wIKXMDSoASAFQAw%3D%3D'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='dark:hover:text-rose-500 text-sm text-gray-700 dark:text-gray-300'
+                  >
+                    Canyonville, OR
+                  </a>
                 </div>
                 <div className='flex items-center gap-3'>
                   <Github className='w-4 h-4 text-gray-600 dark:text-gray-400' />
-                  <span className='text-sm text-gray-700 dark:text-gray-300'>GitHub Profile</span>
+                  <a
+                    href='https://www.linkedin.com/in/bradley-rappa/'
+                    className='text-sm dark:hover:text-green-500 text-gray-700 dark:text-gray-300'
+                  >
+                    GitHub Profile
+                  </a>
                 </div>
                 <div className='flex items-center gap-3'>
                   <Linkedin className='w-4 h-4 text-gray-600 dark:text-gray-400' />
-                  <span className='text-sm text-gray-700 dark:text-gray-300'>LinkedIn Profile</span>
+                  <a
+                    href='https://github.com/konsoul'
+                    className='text-sm dark:hover:text-blue-500 text-gray-700 dark:text-gray-300'
+                  >
+                    LinkedIn Profile
+                  </a>
                 </div>
               </div>
             </div>
