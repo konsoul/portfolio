@@ -5,26 +5,51 @@ Your custom color palette has been integrated into Tailwind CSS! Here's how to u
 ## Available Colors
 
 ### 🖤 Charcoal (#424b54)
+
+<div style="background-color: #424b54; width: 100px; height: 30px; border-radius: 4px; display: inline-block; margin-right: 10px;"></div>
+
+`#424b54` - Dark sophisticated gray-blue
+
 - **Base**: `bg-charcoal`, `text-charcoal`, `border-charcoal`
 - **Shades**: `bg-charcoal-100` through `bg-charcoal-900`
 - **Usage**: Perfect for dark text, headers, and sophisticated backgrounds
 
 ### 🌹 Rosy Brown (#b38d97)
+
+<div style="background-color: #b38d97; width: 100px; height: 30px; border-radius: 4px; display: inline-block; margin-right: 10px;"></div>
+
+`#b38d97` - Warm pinkish-brown
+
 - **Base**: `bg-rosy-brown`, `text-rosy-brown`, `border-rosy-brown`
 - **Shades**: `bg-rosy-brown-100` through `bg-rosy-brown-900`
 - **Usage**: Great for warm accents, buttons, and elegant highlights
 
 ### 🌸 Tea Rose (#d5aca9)
+
+<div style="background-color: #d5aca9; width: 100px; height: 30px; border-radius: 4px; display: inline-block; margin-right: 10px;"></div>
+
+`#d5aca9` - Soft dusty pink
+
 - **Base**: `bg-tea-rose`, `text-tea-rose`, `border-tea-rose`
 - **Shades**: `bg-tea-rose-100` through `bg-tea-rose-900`
 - **Usage**: Excellent for soft accents, cards, and gentle backgrounds
 
 ### 🏜️ Desert Sand (#ebcfb2)
+
+<div style="background-color: #ebcfb2; width: 100px; height: 30px; border-radius: 4px; display: inline-block; margin-right: 10px;"></div>
+
+`#ebcfb2` - Warm creamy beige
+
 - **Base**: `bg-desert-sand`, `text-desert-sand`, `border-desert-sand`
 - **Shades**: `bg-desert-sand-100` through `bg-desert-sand-900`
 - **Usage**: Perfect for warm backgrounds, light sections, and neutral tones
 
 ### 🥈 Silver (#c5baaf)
+
+<div style="background-color: #c5baaf; width: 100px; height: 30px; border-radius: 4px; display: inline-block; margin-right: 10px;"></div>
+
+`#c5baaf` - Neutral warm gray
+
 - **Base**: `bg-silver`, `text-silver`, `border-silver`
 - **Shades**: `bg-silver-100` through `bg-silver-900`
 - **Usage**: Ideal for neutral backgrounds, borders, and subtle text
