@@ -34,13 +34,17 @@ const data = {
   ],
 }
 
-export function AppSidebar({
-  variant,
-  user,
-}: {
+interface AppSidebarProps {
   variant: 'sidebar' | 'floating' | 'inset'
-  user: any
-}) {
+  user: {
+    firstName: string
+    lastName: string
+    emailAddresses: Array<{ emailAddress: string }>
+    imageUrl: string
+  } | null
+}
+
+export function AppSidebar({ variant, user }: AppSidebarProps) {
   return (
     <Sidebar collapsible='offcanvas' variant={variant}>
       <SidebarHeader>

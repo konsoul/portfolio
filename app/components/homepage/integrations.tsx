@@ -1,8 +1,5 @@
-import { memo } from 'react'
 import { Link } from 'react-router'
 import { Button } from '~/components/ui/button'
-import { cn } from '~/lib/utils'
-import { Navbar } from './navbar'
 import { Github } from 'lucide-react'
 import { ThemeToggle } from '../ui/theme-toggle'
 
@@ -22,12 +19,11 @@ export default function IntegrationsSection({
             </div>
             <div className='mx-auto mt-6 max-w-lg space-y-6 text-center sm:mt-0 sm:text-left'>
               <h2 className='text-balance text-3xl font-semibold md:text-4xl text-charcoal-600 dark:text-charcoal-900'>
-                Bradley Rappa 
+                Bradley Rappa
               </h2>
               <p className='text-charcoal-500 dark:text-charcoal-800'>
-                Career transitioner and builder of efficient systems. Former
-                timber cutter turned full-stack MERN developer with a decade of hands-on IT
-                operations experience.
+                Career transitioner and builder of efficient systems. Former timber cutter turned
+                full-stack MERN developer with a decade of hands-on IT operations experience.
               </p>
 
               <div className='flex gap-3'>
@@ -50,4 +46,3 @@ export default function IntegrationsSection({
     </section>
   )
 }
-

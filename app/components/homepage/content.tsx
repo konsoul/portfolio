@@ -1,17 +1,4 @@
-import { Button } from '~/components/ui/button'
-import {
-  ChevronRight,
-  MapPin,
-  Mail,
-  Github,
-  Linkedin,
-  Calendar,
-  Code,
-  Database,
-  Server,
-  Globe,
-} from 'lucide-react'
-import { Link } from 'react-router'
+import { MapPin, Mail, Github, Linkedin, Code, Database, Server } from 'lucide-react'
 
 export default function ContentSection() {
   return (
