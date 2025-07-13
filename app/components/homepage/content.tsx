@@ -7,35 +7,37 @@ export default function ContentSection() {
         <div className='grid gap-6 md:grid-cols-2 md:gap-12'>
           <div className='space-y-6'>
             <h2 className='text-4xl font-medium pb-4 space-y-6'>
-              <span className='text-tea-rose-400'> From Timber to Terminal: </span> Building
-              Efficient Systems That Actually Work.
+              <span className='text-tea-rose-400'> From Timber to Terminal: </span> Bringing
+              Blue-Collar Grit to Modern Development.
             </h2>
-            <img
-              src='../public/monitorsandtrees.jpg'
-              alt='Monitors and Trees'
-              className='w-full h-auto rounded-lg'
-            />
+            <figure className='relative'>
+              <img
+                src='../public/monitorsandtrees.jpg'
+                alt='Monitors and Trees'
+                className='w-full h-auto rounded-lg'
+              />
+            </figure>
           </div>
 
           <div className='space-y-6 flex flex-col justify-center'>
             <p>
               <span className='font-bold text-charcoal-400  dark:text-desert-sand-500'>
-                What Have I Done?:
+                What I bring to the table:
               </span>
-              <br />
-              I've migrated legacy frontends, fixed stubborn infrastructure bugs, and boosted team
-              performance across dev and ops. I speak JavaScript, system logs, and human
-              frustration—and I solve problems before they escalate.
+              <br />I solve complex technical problems and build reliable systems that work. From
+              modernizing legacy codebases to troubleshooting infrastructure issues, I focus on
+              practical solutions that make a real difference for teams and end users.
             </p>
             <p>
               <span className='font-bold text-charcoal-400  dark:text-desert-sand-900'>
-                Real results that matter:
+                Recent accomplishments:
               </span>
               <br />
-              Migrated AngularJS components to React/Redux (40% faster load times), resolved
-              persistent POS crashes that stumped external vendors, and cut report generation time
-              by 40%. With TypeScript, React, Node.js, and infrastructure expertise, I bridge the
-              gap between elegant code and reliable systems.
+              Modernized legacy AngularJS components to React/Redux, improving performance by 40%.
+              Resolved critical POS system failures that had persisted for months. Streamlined
+              reporting workflows with automated templates, reducing manual work significantly. I
+              enjoy tackling the challenging problems that require both technical skill and creative
+              thinking.
             </p>
           </div>
         </div>
@@ -118,6 +120,38 @@ export default function ContentSection() {
                 </div>
                 <div className='flex flex-wrap gap-1'>
                   {['React', 'Redux', 'JavaScript', 'TypeScript', 'HTML5', 'CSS3'].map((skill) => (
+                    <span
+                      key={skill}
+                      className='px-2 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 text-xs rounded-full'
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <div>
+                <div className='flex items-center gap-2 mb-2'>
+                  <Code className='w-4 h-4 text-purple-600 dark:text-purple-400' />
+                  <h4 className='font-medium text-gray-900 dark:text-gray-100'>Tools/Platforms</h4>
+                </div>
+                <div className='flex flex-wrap gap-1'>
+                  {['Git', 'Azure DevOps', 'WS', 'CI/CD'].map((skill) => (
+                    <span
+                      key={skill}
+                      className='px-2 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 text-xs rounded-full'
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <div>
+                <div className='flex items-center gap-2 mb-2'>
+                  <Code className='w-4 h-4 text-purple-600 dark:text-purple-400' />
+                  <h4 className='font-medium text-gray-900 dark:text-gray-100'>Methods</h4>
+                </div>
+                <div className='flex flex-wrap gap-1'>
+                  {['Agile/Scrum', 'Documenation', 'Troubleshooting'].map((skill) => (
                     <span
                       key={skill}
                       className='px-2 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 text-xs rounded-full'
