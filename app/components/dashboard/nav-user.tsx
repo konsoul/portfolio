@@ -1,4 +1,3 @@
-import { useUser } from '@clerk/react-router'
 import { IconDotsVertical, IconLogout, IconUserCircle } from '@tabler/icons-react'
 import { SettingsIcon } from 'lucide-react'
 import { Avatar, AvatarFallback, AvatarImage } from '~/components/ui/avatar'
@@ -19,7 +18,16 @@ import {
 } from '~/components/ui/sidebar'
 import { useClerk } from '@clerk/react-router'
 
-export function NavUser({ user }: any) {
+interface UserProps {
+  user: {
+    firstName: string
+    lastName: string
+    emailAddresses: Array<{ emailAddress: string }>
+    imageUrl: string
+  }
+}
+
+export function NavUser({ user }: UserProps) {
   const { isMobile } = useSidebar()
   const userFullName = user.firstName + ' ' + user.lastName
   const userEmail = user.emailAddresses[0].emailAddress
