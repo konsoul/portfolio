@@ -153,9 +153,19 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground font-sans;
+    @apply bg-background text-foreground;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    /* Elegant subtle texture for card contrast */
+    background-image:
+      radial-gradient(circle at 25% 25%, rgba(181, 141, 151, 0.015) 0%, transparent 50%),
+      radial-gradient(circle at 75% 75%, rgba(213, 172, 169, 0.01) 0%, transparent 50%);
+    background-size:
+      300px 300px,
+      200px 200px;
+    background-position:
+      0 0,
+      100px 100px;
   }
   button,
   input,
@@ -251,6 +261,19 @@
   --color-dark-desert-sand-800: #f7ece0;
   --color-dark-desert-sand-900: #fbf6f0;
   --color-dark-desert-sand: #ebcfb2;
+}
+
+/* Dark mode subtle texture for card contrast */
+.dark body {
+  background-image:
+    radial-gradient(circle at 25% 25%, rgba(195, 164, 172, 0.02) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(221, 189, 187, 0.015) 0%, transparent 50%);
+  background-size:
+    300px 300px,
+    200px 200px;
+  background-position:
+    0 0,
+    100px 100px;
 }
 
 @layer base {

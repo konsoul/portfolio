@@ -10,7 +10,7 @@ export default function IntegrationsSection({
 }) {
   return (
     <section id='hero'>
-      <div className='bg-gradient-to-br from-tea-rose-700 to-desert-sand-800 dark:from-charcoal-200 dark:to-charcoal-400 py-24 md:py-32'>
+      <div className='py-24 md:py-32'>
         <div className='mx-auto max-w-5xl px-6 mt-[2rem]'>
           <div className='grid items-center sm:grid-cols-2'>
             <div className='relative mx-auto w-fit rounded-2xl p-8'>
@@ -26,7 +26,7 @@ export default function IntegrationsSection({
                 full-stack MERN developer with a decade of hands-on IT operations experience.
               </p>
 
-              <div className='flex gap-3'>
+              <div className='flex gap-3 items-center'>
                 <Button size='sm' asChild>
                   <Link to={loaderData?.isSignedIn ? '/dashboard' : '/sign-up'} prefetch='viewport'>
                     {loaderData?.isSignedIn ? 'View Dashboard' : 'Get Started'}
