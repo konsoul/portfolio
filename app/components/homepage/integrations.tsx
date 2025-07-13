@@ -26,7 +26,7 @@ export default function IntegrationsSection({
                 full-stack MERN developer with a decade of hands-on IT operations experience.
               </p>
 
-              <div className='flex gap-3'>
+              <div className='flex gap-3 items-center'>
                 <Button size='sm' asChild>
                   <Link to={loaderData?.isSignedIn ? '/dashboard' : '/sign-up'} prefetch='viewport'>
                     {loaderData?.isSignedIn ? 'View Dashboard' : 'Get Started'}
