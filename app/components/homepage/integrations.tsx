@@ -15,7 +15,7 @@ export default function IntegrationsSection({
           <div className='grid items-center sm:grid-cols-2'>
             <div className='relative mx-auto w-fit rounded-2xl p-8'>
               <div className='bg-radial absolute z-10'></div>
-              <img src='../public/IMG_0098.png' className='rounded-lg' alt='Bradley Rappa' />
+              <img src='/IMG_0098.png' className='rounded-lg' alt='Bradley Rappa' />
             </div>
             <div className='mx-auto mt-6 max-w-lg space-y-6 text-center sm:mt-0 sm:text-left'>
               <h2 className='text-balance text-3xl font-semibold md:text-4xl text-charcoal-600 dark:text-charcoal-900'>

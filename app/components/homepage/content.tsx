@@ -22,7 +22,7 @@ export default function ContentSection() {
             </h2>
             <figure className='relative'>
               <img
-                src='../public/monitorsandtrees.jpg'
+                src='/monitorsandtrees.jpg'
                 alt='Monitors and Trees'
                 className='w-full h-auto rounded-lg'
               />
