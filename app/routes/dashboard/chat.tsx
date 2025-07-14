@@ -26,8 +26,8 @@ export default function Chat() {
               className={cn(
                 'max-w-[65%] px-3 py-1.5 text-sm shadow-sm',
                 message.role === 'user'
-                  ? 'bg-[#0B93F6] text-white rounded-2xl rounded-br-sm'
-                  : 'bg-[#E9E9EB] text-black rounded-2xl rounded-bl-sm',
+                  ? 'bg-[#b38d97] text-white rounded-2xl rounded-br-sm'
+                  : 'bg-[#424b54] text-tea-rose rounded-2xl rounded-bl-sm',
               )}
             >
               {message.parts.map((part) => {
@@ -54,9 +54,9 @@ export default function Chat() {
         className='flex gap-2 justify-center w-full items-center fixed bottom-0'
         onSubmit={handleSubmit}
       >
-        <div className='flex flex-col gap-2 justify-center items-start mb-8 max-w-xl w-full border p-2 rounded-lg bg-white '>
+        <div className='flex flex-col gap-2 justify-center items-start mb-8 max-w-xl w-full border p-2 rounded-lg bg-charcoal '>
           <Input
-            className='w-full border-0 shadow-none !ring-transparent '
+            className='w-full border-0 text-desert-sand shadow-none !ring-transparent '
             value={input}
             placeholder='Say something...'
             onChange={handleInputChange}

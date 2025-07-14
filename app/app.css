@@ -188,7 +188,7 @@
 
 .dark {
   /* Custom Dark Theme Colors - Using Your Color Palette */
-  --background: #0d0f11; /* Charcoal 100 - Deep, rich background */
+  --background: #151515; /* Charcoal 100 - Deep, rich background */
   --foreground: #d6dbdf; /* Charcoal 900 - Light text */
   --card: #1a1e21; /* Charcoal 200 - Elevated card backgrounds */
   --card-foreground: #d6dbdf; /* Charcoal 900 - Card text */
