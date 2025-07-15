@@ -36,9 +36,11 @@ export default function DashboardLayout() {
       }
     >
       <AppSidebar variant='inset' user={user} />
-      <SidebarInset>
+      <SidebarInset className='flex flex-col h-screen'>
         <SiteHeader />
-        <Outlet />
+        <div className='flex-1 overflow-hidden'>
+          <Outlet />
+        </div>
       </SidebarInset>
     </SidebarProvider>
   )

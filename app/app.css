@@ -283,4 +283,28 @@
   body {
     @apply bg-background text-foreground;
   }
+  /* Chat-specific improvements */
+  .chat-message {
+    @apply transition-all duration-200 ease-in-out;
+  }
+  .chat-message:hover {
+    @apply transform scale-[1.01];
+  }
+  /* Custom scrollbar for chat */
+  .chat-container::-webkit-scrollbar {
+    width: 6px;
+  }
+  .chat-container::-webkit-scrollbar-track {
+    @apply bg-muted;
+  }
+  .chat-container::-webkit-scrollbar-thumb {
+    @apply bg-muted-foreground/30 rounded-full;
+  }
+  .chat-container::-webkit-scrollbar-thumb:hover {
+    @apply bg-muted-foreground/50;
+  }
+  /* Smooth focus transitions */
+  .chat-input:focus-within {
+    @apply ring-2 ring-primary/20 border-primary;
+  }
 }
