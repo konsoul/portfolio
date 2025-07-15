@@ -187,39 +187,39 @@
 }
 
 .dark {
-  /* Custom Dark Theme Colors - Using Your Color Palette */
-  --background: #151515; /* Charcoal 100 - Deep, rich background */
-  --foreground: #d6dbdf; /* Charcoal 900 - Light text */
-  --card: #1a1e21; /* Charcoal 200 - Elevated card backgrounds */
-  --card-foreground: #d6dbdf; /* Charcoal 900 - Card text */
-  --popover: #1a1e21; /* Charcoal 200 - Popover backgrounds */
-  --popover-foreground: #d6dbdf; /* Charcoal 900 - Popover text */
-  --primary: #c3a4ac; /* Rosy Brown 600 - Lighter primary for dark mode */
-  --primary-foreground: #271a1d; /* Rosy Brown 100 - Dark text on primary */
-  --secondary: #272c32; /* Charcoal 300 - Secondary backgrounds */
-  --secondary-foreground: #aeb7bf; /* Charcoal 800 - Secondary text */
-  --muted: #343b42; /* Charcoal 400 - Muted backgrounds */
-  --muted-foreground: #85929f; /* Charcoal 700 - Muted text */
-  --accent: #ddbdbb; /* Tea Rose 600 - Soft accent for dark mode */
-  --accent-foreground: #331b19; /* Tea Rose 100 - Dark text on accent */
-  --destructive: #bc7b76; /* Tea Rose 400 - Warm destructive */
-  --destructive-foreground: #f7eeee; /* Tea Rose 900 - Light text on destructive */
-  --border: #424b54; /* Charcoal 500 - Borders */
-  --input: #343b42; /* Charcoal 400 - Input backgrounds */
-  --ring: #c3a4ac; /* Rosy Brown 600 - Focus rings */
+  /* Custom Dark Theme Colors - Warm Dark Brown Scheme */
+  --background: #1a1612; /* Deep warm brown - cozy and inviting */
+  --foreground: #e8e0d6; /* Warm light text - cream-like */
+  --card: #231f1a; /* Warm brown card - elevated surfaces */
+  --card-foreground: #e8e0d6; /* Warm light text on cards */
+  --popover: #231f1a; /* Warm brown popover backgrounds */
+  --popover-foreground: #e8e0d6; /* Warm light text on popovers */
+  --primary: #c3a4ac; /* Rosy Brown 600 - maintains brand identity */
+  --primary-foreground: #271a1d; /* Rosy Brown 100 - dark text on primary */
+  --secondary: #2d2823; /* Medium warm brown - secondary backgrounds */
+  --secondary-foreground: #c7b8a8; /* Warm secondary text */
+  --muted: #38342d; /* Muted warm brown - subtle backgrounds */
+  --muted-foreground: #a0947f; /* Muted warm text */
+  --accent: #ddbdbb; /* Tea Rose 600 - soft accent maintains warmth */
+  --accent-foreground: #331b19; /* Tea Rose 100 - dark text on accent */
+  --destructive: #bc7b76; /* Tea Rose 400 - warm destructive */
+  --destructive-foreground: #f7eeee; /* Tea Rose 900 - light text on destructive */
+  --border: #454037; /* Warm brown border - subtle but defined */
+  --input: #38342d; /* Warm brown input backgrounds */
+  --ring: #c3a4ac; /* Rosy Brown 600 - focus rings */
   --chart-1: #c3a4ac; /* Rosy Brown 600 */
   --chart-2: #ddbdbb; /* Tea Rose 600 */
   --chart-3: #efd9c1; /* Desert Sand 600 */
   --chart-4: #d1c8bf; /* Silver 600 */
-  --chart-5: #616e7b; /* Charcoal 600 */
-  --sidebar: #1a1e21; /* Charcoal 200 - Sidebar background */
-  --sidebar-foreground: #aeb7bf; /* Charcoal 800 - Sidebar text */
-  --sidebar-primary: #c3a4ac; /* Rosy Brown 600 - Sidebar primary */
-  --sidebar-primary-foreground: #271a1d; /* Rosy Brown 100 - Sidebar primary text */
-  --sidebar-accent: #272c32; /* Charcoal 300 - Sidebar accent */
-  --sidebar-accent-foreground: #aeb7bf; /* Charcoal 800 - Sidebar accent text */
-  --sidebar-border: #424b54; /* Charcoal 500 - Sidebar borders */
-  --sidebar-ring: #c3a4ac; /* Rosy Brown 600 - Sidebar focus */
+  --chart-5: #a0947f; /* Warm brown for charts */
+  --sidebar: #231f1a; /* Warm brown sidebar - matches cards */
+  --sidebar-foreground: #c7b8a8; /* Warm sidebar text */
+  --sidebar-primary: #c3a4ac; /* Rosy Brown 600 - sidebar primary */
+  --sidebar-primary-foreground: #271a1d; /* Rosy Brown 100 - sidebar primary text */
+  --sidebar-accent: #2d2823; /* Medium warm brown - sidebar accent */
+  --sidebar-accent-foreground: #c7b8a8; /* Warm sidebar accent text */
+  --sidebar-border: #454037; /* Warm brown sidebar borders */
+  --sidebar-ring: #c3a4ac; /* Rosy Brown 600 - sidebar focus */
   /* Improved custom colors for dark mode */
   --color-dark-charcoal-100: #0d0f11;
   --color-dark-charcoal-200: #1a1e21;
@@ -263,17 +263,20 @@
   --color-dark-desert-sand: #ebcfb2;
 }
 
-/* Dark mode subtle texture for card contrast */
+/* Dark mode subtle texture for card contrast - Warm Brown Theme */
 .dark body {
   background-image:
-    radial-gradient(circle at 25% 25%, rgba(195, 164, 172, 0.02) 0%, transparent 50%),
-    radial-gradient(circle at 75% 75%, rgba(221, 189, 187, 0.015) 0%, transparent 50%);
+    radial-gradient(circle at 25% 25%, rgba(195, 164, 172, 0.025) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(235, 207, 178, 0.015) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(160, 148, 127, 0.008) 0%, transparent 60%);
   background-size:
-    300px 300px,
-    200px 200px;
+    350px 350px,
+    250px 250px,
+    500px 500px;
   background-position:
     0 0,
-    100px 100px;
+    100px 100px,
+    200px 200px;
 }
 
 @layer base {
@@ -303,8 +306,5 @@
   .chat-container::-webkit-scrollbar-thumb:hover {
     @apply bg-muted-foreground/50;
   }
-  /* Smooth focus transitions */
-  .chat-input:focus-within {
-    @apply ring-2 ring-primary/20 border-primary;
-  }
+  /* Smooth focus transitions - now handled in Input component */
 }

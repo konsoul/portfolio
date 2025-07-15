@@ -55,7 +55,7 @@ export default function ContentSection() {
         {/* Resume Section */}
         <div className='mt-24 space-y-12'>
           {/* Key Achievements */}
-          <div className='bg-gradient-to-r from-white to-silver-900 dark:from-slate-800/30 dark:to-gray-800/60 p-8 rounded-2xl border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-md dark:shadow-gray-900/20 transition-shadow'>
+          <div className='bg-gradient-to-r from-white to-silver-900 dark:from-amber-950/20 dark:to-amber-900/30 p-8 rounded-2xl border border-gray-200 dark:border-amber-800/40 shadow-sm hover:shadow-md dark:shadow-amber-900/20 transition-shadow backdrop-blur-sm'>
             <div className='flex items-center gap-3 mb-6'>
               <div className='w-2 h-8 bg-green-600 dark:bg-green-500 rounded-full'></div>
               <h3 className='text-2xl font-semibold text-gray-900 dark:text-gray-100'>
@@ -115,7 +115,7 @@ export default function ContentSection() {
           </div>
 
           {/* Technical Skills */}
-          <div className='bg-gradient-to-r from-white to-silver-900 dark:from-charcoal-100/50 dark:to-charcoal-200/30 p-8 rounded-2xl border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-md dark:shadow-gray-900/20 transition-shadow'>
+          <div className='bg-gradient-to-r from-white to-silver-900 dark:from-orange-950/15 dark:to-orange-900/25 p-8 rounded-2xl border border-gray-200 dark:border-orange-800/35 shadow-sm hover:shadow-md dark:shadow-orange-900/15 transition-shadow backdrop-blur-sm'>
             <div className='flex items-center gap-3 mb-6'>
               <div className='w-2 h-8 bg-purple-600 dark:bg-purple-500 rounded-full'></div>
               <h3 className='text-2xl font-semibold text-gray-900 dark:text-gray-100'>
@@ -207,7 +207,7 @@ export default function ContentSection() {
           </div>
 
           {/* Experience */}
-          <div className='bg-gradient-to-r from-white to-silver-900 dark:from-charcoal-400/30 dark:to-slate-600/35 p-8 rounded-2xl border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-md dark:shadow-gray-900/20 transition-shadow'>
+          <div className='bg-gradient-to-r from-white to-silver-900 dark:from-yellow-950/18 dark:to-yellow-900/28 p-8 rounded-2xl border border-gray-200 dark:border-yellow-800/35 shadow-sm hover:shadow-md dark:shadow-yellow-900/15 transition-shadow backdrop-blur-sm'>
             <div className='flex items-center gap-3 mb-6'>
               <div className='w-2 h-8 bg-orange-600 dark:bg-orange-500 rounded-full'></div>
               <h3 className='text-2xl font-semibold text-gray-900 dark:text-gray-100'>
@@ -298,7 +298,7 @@ export default function ContentSection() {
 
           {/* Education & Contact */}
           <div className='grid gap-6 md:grid-cols-2'>
-            <div className='bg-gradient-to-r from-white to-silver-900 dark:from-slate-800/40 dark:to-gray-800/30 p-8 rounded-2xl border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-md dark:shadow-gray-900/20 transition-shadow'>
+            <div className='bg-gradient-to-r from-white to-silver-900 dark:from-stone-950/22 dark:to-stone-900/32 p-8 rounded-2xl border border-gray-200 dark:border-stone-800/40 shadow-sm hover:shadow-md dark:shadow-stone-900/18 transition-shadow backdrop-blur-sm'>
               <div className='flex items-center gap-3 mb-6'>
                 <div className='w-2 h-8 bg-blue-600 dark:bg-blue-500 rounded-full'></div>
                 <h3 className='text-2xl font-semibold text-gray-900 dark:text-gray-100'>
@@ -318,7 +318,7 @@ export default function ContentSection() {
               </div>
             </div>
 
-            <div className='bg-gradient-to-r from-white to-silver-900 dark:from-charcoal-100/50 dark:to-charcoal-200/30 p-8 rounded-2xl border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-md dark:shadow-gray-900/20 transition-shadow'>
+            <div className='bg-gradient-to-r from-white to-silver-900 dark:from-neutral-950/20 dark:to-neutral-900/30 p-8 rounded-2xl border border-gray-200 dark:border-neutral-800/38 shadow-sm hover:shadow-md dark:shadow-neutral-900/16 transition-shadow backdrop-blur-sm'>
               <div className='flex items-center gap-3 mb-6'>
                 <div className='w-2 h-8 bg-green-600 dark:bg-green-500 rounded-full'></div>
                 <h3 className='text-2xl font-semibold text-gray-900 dark:text-gray-100'>Contact</h3>
