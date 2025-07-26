@@ -25,7 +25,13 @@ export default function HeroSection() {
           variant='ghost'
           className='opacity-0 scale-95 hover:opacity-100 hover:scale-100 transition-all duration-300 ease-out'
         >
-          <Link to='/easter-egg' target='_blank' rel='noopener noreferrer'>Click Me!</Link>
+          <Link
+            to='https://music-portfolio-dusky.vercel.app/'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            Click Me!
+          </Link>
         </Button>
       </div>
       {/* Full screen logo container */}

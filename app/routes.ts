@@ -4,7 +4,6 @@ export default [
   index('routes/home.tsx'),
   route('sign-in/*', 'routes/sign-in.tsx'),
   route('sign-up/*', 'routes/sign-up.tsx'),
-  route('easter-egg', 'routes/easter-egg.tsx'),
   layout('routes/dashboard/layout.tsx', [
     route('dashboard', 'routes/dashboard/index.tsx'),
     route('dashboard/chat', 'routes/dashboard/chat.tsx'),
