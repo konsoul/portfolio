@@ -1,6 +1,6 @@
 import { Link } from 'react-router'
 import { Button } from '~/components/ui/button'
-import { Github } from 'lucide-react'
+import { Github, Linkedin } from 'lucide-react'
 import { ThemeToggle } from '../ui/theme-toggle'
 
 export default function IntegrationsSection({
@@ -27,16 +27,32 @@ export default function IntegrationsSection({
               </p>
 
               <div className='flex gap-3 items-center'>
-                <Button size='sm' asChild>
-                  <Link to={loaderData?.isSignedIn ? '/dashboard' : '/sign-up'} prefetch='viewport'>
-                    {loaderData?.isSignedIn ? 'View Dashboard' : 'Get Started'}
+                <Button variant='secondary' size='sm' asChild>
+                  <Link
+                    to='https://gospel-toolkit.vercel.app/'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    Gospel Toolkit Project
                   </Link>
                 </Button>
+
+                <Button variant='default' size='sm' asChild>
+                  <Link
+                    to='https://www.linkedin.com/in/bradley-rappa/'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    <Linkedin /> LinkedIn
+                  </Link>
+                </Button>
+
                 <Button variant='outline' size='sm' asChild>
                   <Link to='https://github.com/konsoul' target='_blank' rel='noopener noreferrer'>
-                    <Github /> View on GitHub
+                    <Github /> GitHub
                   </Link>
                 </Button>
+
                 <ThemeToggle />
               </div>
             </div>

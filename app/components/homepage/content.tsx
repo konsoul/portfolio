@@ -12,7 +12,7 @@ import {
 
 export default function ContentSection() {
   return (
-    <section id='features' className='py-16 md:py-32'>
+    <section id='features' className='py-10 md:py-24'>
       <div className='mx-auto max-w-5xl px-6'>
         <div className='grid gap-6 md:grid-cols-2 md:gap-12'>
           <div className='space-y-6'>

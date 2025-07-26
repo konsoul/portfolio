@@ -3,14 +3,14 @@ import ContentSection from '~/components/homepage/content'
 import Footer from '~/components/homepage/footer'
 import Integrations from '~/components/homepage/integrations'
 import type { Route } from './+types/home'
+import HeroSection from '../components/homepage/hero'
 
 export function meta({}: Route.MetaArgs) {
   const title = 'Developer Portfolio'
   const description = 'Personal developer portfolio showcasing projects, skills, and experience.'
   const keywords = 'Developer, Portfolio, React, TypeScript, Full Stack'
-  const siteUrl = 'https://your-portfolio.com/'
-  const imageUrl =
-    'https://jdj14ctwppwprnqu.public.blob.vercel-storage.com/rsk-image-FcUcfBMBgsjNLo99j3NhKV64GT2bQl.png'
+  const siteUrl = 'https://portfolio-seven-jet-18.vercel.app/'
+  const imageUrl = 'https://portfolio-seven-jet-18.vercel.app/logo.png'
 
   return [
     { title },
@@ -58,9 +58,10 @@ export async function loader(args: Route.LoaderArgs) {
 export default function Home({ loaderData }: Route.ComponentProps) {
   return (
     <>
+     <HeroSection />
       <Integrations loaderData={loaderData} />
+     
       <ContentSection />
-
       <Footer />
     </>
   )
