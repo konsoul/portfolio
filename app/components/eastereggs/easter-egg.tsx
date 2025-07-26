@@ -1,4 +1,4 @@
-export default function FooterSection() {
+export default function EasterEgg() {
   return (
     <footer className='pt-4 md:pt-8 pb-10 md:pb-16 bg-neutral-100 dark:bg-neutral-900'>
       <div className='mx-auto max-w-3xl sm:max-w-5xl px-4 sm:px-6'>

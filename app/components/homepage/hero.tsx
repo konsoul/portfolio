@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Download, ChevronDown } from 'lucide-react'
 import { Button } from '../ui/button'
+import { Link } from 'react-router'
 
 export default function HeroSection() {
   const [shouldFadeIn, setShouldFadeIn] = useState(false)
@@ -19,13 +20,28 @@ export default function HeroSection() {
         shouldFadeIn ? 'opacity-100' : 'opacity-0'
       }`}
     >
+      <div>
+        <Button
+          variant='ghost'
+          className='opacity-0 scale-95 hover:opacity-100 hover:scale-100 transition-all duration-300 ease-out'
+        >
+          <Link to='/easter-egg' target='_blank' rel='noopener noreferrer'>Click Me!</Link>
+        </Button>
+      </div>
       {/* Full screen logo container */}
       <div className='h-screen w-full flex items-center justify-center relative px-4 sm:px-6 md:px-8'>
-        <img
-          src='/logo-transparent.png'
-          alt='Portfolio Logo'
-          className='w-full h-auto max-w-sm sm:max-w-md md:max-w-lg lg:max-w-none object-contain'
-        />
+        <div className='relative group overflow-hidden'>
+          <img
+            src='/logo-transparent.png'
+            alt='Portfolio Logo'
+            className='w-full h-auto max-w-sm sm:max-w-md md:max-w-lg lg:max-w-none object-cover transition-opacity duration-300 ease-in-out group-hover:opacity-50'
+          />
+          <div className='absolute inset-0 bg-opacity-0 group-hover:bg-opacity-40 flex items-center justify-center transition-all duration-300 rounded-lg'>
+            <p className='text-white text-xl font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
+              Can you find the Easter Egg?
+            </p>
+          </div>
+        </div>
 
         {/* Download button positioned over the logo */}
         <div className='absolute bottom-20 sm:bottom-24 md:bottom-32 left-1/2 transform -translate-x-1/2 px-4'>
@@ -39,8 +55,6 @@ export default function HeroSection() {
               <span className='hidden xs:inline'>Download </span>Resume
             </a>
           </Button>
-
-         
         </div>
         <div className='absolute bottom-4 sm:bottom-6 md:bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce'>
           <ChevronDown className='w-5 h-5 sm:w-6 sm:h-6 text-muted-foreground' />

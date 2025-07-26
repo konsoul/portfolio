@@ -58,9 +58,9 @@ export async function loader(args: Route.LoaderArgs) {
 export default function Home({ loaderData }: Route.ComponentProps) {
   return (
     <>
-     <HeroSection />
+      <HeroSection />
       <Integrations loaderData={loaderData} />
-     
+
       <ContentSection />
       <Footer />
     </>
