@@ -43,10 +43,8 @@ export default function HeroSection() {
           </div>
 
           <div className='mt-4 text-center'>
-            <p className='text-lg sm:text-xl md:text-2xl font-medium text-muted-foreground'>
-              Full-Stack Developer
-            </p>
-            <p className='text-sm sm:text-base text-muted-foreground/80 mt-2'>Bradley Rappa</p>
+            <p className='text-2xl sm:text-4xl md:text-6xl font-medium'>Bradley Rappa</p>
+            <p className='text-lg sm:text-2xl text-muted-foreground/80 mt-2'>Full Stack Developer</p>
           </div>
 
           <div className='relative inset-0 bg-opacity-0 group-hover:bg-opacity-40 flex items-center justify-center transition-all duration-300 rounded-lg'>
