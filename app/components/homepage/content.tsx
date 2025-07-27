@@ -8,11 +8,16 @@ export default function ContentSection() {
         <div className='grid gap-6 md:grid-cols-2 md:gap-12'>
           <div className='space-y-6'>
             <h2 className='text-4xl font-medium pb-4 space-y-6'>
-              <span className='text-tea-rose-400'> From Timber to Terminal: </span> Bringing
-              Blue-Collar Grit to Modern Development.
+              <span className='text-tea-rose-400 font-bitcount-muted'>
+                {' '}
+                From Timber to Terminal:{' '}
+              </span>{' '}
+              Bringing Blue-Collar Grit to Modern Development.
             </h2>
             <figure className='relative'>
               <img
+                loading='lazy'
+                decoding='async'
                 src='/monitorsandtrees.jpg'
                 alt='Monitors and Trees'
                 className='w-full h-auto rounded-lg'

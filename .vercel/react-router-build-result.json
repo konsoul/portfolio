@@ -87,9 +87,9 @@
     }
   },
   "reactRouterConfig": {
-    "appDirectory": "/Volumes/Mac External/Programming/Projects/New-Portfolio/app",
+    "appDirectory": "/Users/bradley/Developer/Portfolio/app",
     "basename": "/",
-    "buildDirectory": "/Volumes/Mac External/Programming/Projects/New-Portfolio/build",
+    "buildDirectory": "/Users/bradley/Developer/Portfolio/build",
     "future": {
       "unstable_middleware": false,
       "unstable_optimizeDeps": false,
