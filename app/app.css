@@ -276,6 +276,36 @@
     100px 100px;
 }
 
+.logo-text {
+  font-family:
+    'Inter',
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+  font-size: 20rem; /* Adjust based on your needs */
+  font-weight: 700;
+  /* letter-spacing: -0.05em; */
+  background: linear-gradient(180deg, #ff1493 0%, #8a2be2 35%, #4169e1 70%, #00bfff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent; /* Fallback for non-webkit browsers */
+  text-shadow: none;
+  display: inline-block;
+}
+
+@media (max-width: 640px) {
+  .logo-text {
+    font-size: 10rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .logo-text {
+    font-size: 20rem;
+  }
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;

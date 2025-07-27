@@ -35,14 +35,21 @@ export default function HeroSection() {
         </Button>
       </div>
       {/* Full screen logo container */}
+
       <div className='h-screen w-full flex items-center justify-center relative px-4 sm:px-6 md:px-8'>
-        <div className='relative group overflow-hidden'>
-          <img
-            src='/logo-transparent.png'
-            alt='Portfolio Logo'
-            className='w-full h-auto max-w-sm sm:max-w-md md:max-w-lg lg:max-w-none object-cover transition-opacity duration-300 ease-in-out group-hover:opacity-50'
-          />
-          <div className='absolute inset-0 bg-opacity-0 group-hover:bg-opacity-40 flex items-center justify-center transition-all duration-300 rounded-lg'>
+        <div className='relative group flex flex-col items-center w-full max-w-4xl justify-center'>
+          <div className='logo-text transition-opacity duration-300 ease-in-out group-hover:opacity-50 text-center leading-none w-full'>
+            BR
+          </div>
+
+          <div className='mt-4 text-center'>
+            <p className='text-lg sm:text-xl md:text-2xl font-medium text-muted-foreground'>
+              Full-Stack Developer
+            </p>
+            <p className='text-sm sm:text-base text-muted-foreground/80 mt-2'>Bradley Rappa</p>
+          </div>
+
+          <div className='relative inset-0 bg-opacity-0 group-hover:bg-opacity-40 flex items-center justify-center transition-all duration-300 rounded-lg'>
             <p className='text-white text-xl font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
               Can you find the Easter Egg?
             </p>
